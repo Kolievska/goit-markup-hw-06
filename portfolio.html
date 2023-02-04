@@ -234,8 +234,8 @@
 
     </main>
 
-    <footer>
-      <div class="container footer-box">
+    <footer class="footer-section">
+      <div class="container footer-container">
         <div class="footer-address">
           <a href="./index.html" class="logo logo-footer">
           <span lang="en"><span class="logo-accent">Web</span>Studio</span>
@@ -247,6 +247,7 @@
           <a href="tel:+380961111111" class="address-tel" >+38 096 111 11 11</a>
           <a href="mailto:info@devstudio.com" class="address-mail">info@devstudio.com</a>
         </address></div>
+
         <div class="footer-social-links">
           <h3>Приєднуйтесь</h3>
           <ul class="list footer-links-list">
@@ -257,24 +258,39 @@
               </svg></a>
             </li>
             <li>
-              <a href="" class="footer-list-item">
+              <a href=""  class="footer-list-item">
               <svg class="footer-social-link" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter"></use>
               </svg></a>
             </li>
             <li>
-              <a href="" class="footer-list-item">
+              <a href=""  class="footer-list-item">
               <svg class="footer-social-link" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook"></use>
               </svg></a>
             </li>
-            <li >
-              <a href="" class="footer-list-item">
+            <li>
+              <a href=""  class="footer-list-item">
               <svg class="footer-social-link" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
               </svg></a>
             </li>
           </ul>
+        </div>
+
+        <div class="newsletter">
+          <h3>Підпишіться на розсилку</h3>
+          <div class="newsletter-field">
+              <label for="newsletter"></label>
+              <input class="newsletter-input" type="email" name="mail" 
+              id="newsletter" placeholder="E-mail">
+
+              <button class="modal-btn newsletter-btn" type="submit">
+              <span class="newsletter-text"> Підписатись</span>
+              <svg class="newsletter-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg> </button>
+          </div>
         </div>
       </div>
   </footer>
