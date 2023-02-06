@@ -594,8 +594,6 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-
-  gap: 93px;
 }
 
 .footer-container h3 { 
@@ -612,6 +610,10 @@ img {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+.address {
+  margin-right: 73px;
 }
 
 .address a {
@@ -641,6 +643,10 @@ img {
 .address-tel,
 .address-mail {
   color: rgba(255, 255, 255, 60%);
+}
+
+.footer-social-links {
+  margin-right: 93px;
 }
 
 .footer-links-list {
