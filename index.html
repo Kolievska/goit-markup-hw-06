@@ -447,61 +447,46 @@
 
       <form class="form">
         <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+      
+          <label class="form-field">Ім'я
+            <input class="form-input" type="text" name="name" 
+              placeholder="" autofocus>
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+          </label>
 
-        <div class="form-field">
-          <label class="form-label" for="user-name">Ім'я</label>
-          <input class="form-input" type="text" name="name" 
-          id="user-name" placeholder="" autofocus>
-          <span class="form-icon">
-            <svg  width="12" height="12">
-              <use href="./images/sprite.svg#icon-person"></use>
-            </svg>
-          </span>
-        </div>
+          <label class="form-field">Телефон
+            <input class="form-input" type="tel" name="tel" 
+              placeholder="">
+              <svg class="form-icon" width="13" height="13">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+          </label>
 
-        <div class="form-field">
-          <label class="form-label" for="tel">Телефон</label>
-          <input  class="form-input" type="tel" name="tel" 
-          id="tel" placeholder="">
-          <span class="form-icon">
-            <svg  width="13" height="13">
-              <use href="./images/sprite.svg#icon-phone"></use>
-            </svg>
-          </span>
-        </div>
+          <label class="form-field">Пошта
+            <input class="form-input" type="email" name="email" 
+              placeholder="">
+              <svg class="form-icon" width="15" height="12">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+          </label>
 
-        <div class="form-field">
-          <label class="form-label" for="mail">Пошта</label>
-          <input  class="form-input" type="email" name="email" 
-          id="mail" placeholder="">
-          <span class="form-icon">
-            <svg  width="15" height="12">
-              <use href="./images/sprite.svg#icon-email"></use>
-            </svg>
-          </span>
-        </div>
-
-        <div class="form-field">
-          <label class="form-label" for="comment">Коментар</label>
+          <label class="form-field">Коментар
         <textarea 
           class="comment"
           name="comment"
-          id="comment"
           rows="8"
-          placeholder="Введіть текст"
-        ></textarea>
-        </div>
-
-        <div class="form-policy">
-          <input class="check" type="checkbox" name="policy" id="policy"/>
-          <svg class="icon-check" width="16" height="15">
-            <use href="./images/sprite.svg#icon-check"></use>
-          </svg>
-          <label for="policy"  class="policy">
-            Погоджуюся з розсилкою та приймаю 
+          placeholder="Введіть текст"></textarea>
+          </label>
+        
+          
+          <label class="form-policy">
+            <input class="checkbox" type="checkbox" name="policy"/>
+            <span class="checkbox-icon"></span>
+           Погоджуюся з розсилкою та приймаю 
             <a href="" class="conditions">Умови договору</a> 
           </label>
-        </div>
 
         <button type="submit" class="modal-btn">Відправити</button>
         

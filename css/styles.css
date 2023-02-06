@@ -799,15 +799,13 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-}
 
-.form-label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
+
 
 .form-input {
   margin: 0;
@@ -815,6 +813,7 @@ img {
   width: 100%;
   padding-left: 42px;
   padding-right: 16px;
+  margin-bottom: 10px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -828,7 +827,7 @@ img {
 
 .form-icon {
   position: absolute;
-  top: 52%;
+  top: 42%;
   left: 15px;
 
   fill: var(--title-color);
@@ -836,17 +835,19 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus {
+.form-field:focus-within > .form-input,
+.form-field:focus-within > .comment {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.form-input:focus + .form-icon {
+.form-field:focus-within > .form-icon {
   fill: var(--accent-color);
 }
 
 .comment {
   resize: none;
+  width: 100%;
   margin-bottom: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -863,34 +864,49 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
 .form-policy {
   position: relative;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.policy {
-  margin-left: 9px;
+  gap: 9px;
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-/* .icon-check {
+.checkbox {
+  appearance: none;
   position: absolute;
-  top: 4px;
-  left: 19px;
-  pointer-events: none;
-  cursor: pointer;
-} */
+ 
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
+}
+
+.checkbox-icon { 
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-image: url(../images/icon-check.svg);
+  width: 16px;
+  height: 15px;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}
 
 .conditions {
   color: var(--accent-color);
